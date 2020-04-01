@@ -4,7 +4,7 @@ Watch the full video here: https://youtu.be/Ib8RffCYcfo
 
 Below in the code I used in the 'Function' Nodes.
 
-Example 1 - speak_bedroom_temperature:
+* Example 1 - speak_bedroom_temperature:
 ```yaml
 msg.payload =
 
@@ -19,7 +19,7 @@ msg.payload =
 
 return msg
 ```
-Example 2 - Random made TTS:
+* Example 2 - Random made TTS:
 ```yaml
 var line1 = ["Awesome, ", "Oh wow, ", "Excellent, ", "Super, "]
 var line2 = [
@@ -49,7 +49,7 @@ line5[Math.floor(Math.random() * line5.length)]
 
 return msg
 ```
-Example 3 - Random made TTS and Sensor Data:
+* Example 3 - Random made TTS and Sensor Data:
 
 ```yaml
 var beg = ["The temperature is ", "Its currently ", "Looks like its ", "I see its "]
@@ -69,6 +69,17 @@ end[Math.floor(Math.random() * end.length)]+
 
 return msg
 ```
+* Set Thermo Node:
+```yaml
+if (msg.payload === "on") {
+
+msg.payload =
+global.get('homeassistant').homeAssistant.states["sensor.bedroom_temperature"].state;  
+}
+
+return msg
+```
+
 
 <a href="https://www.buymeacoffee.com/3ative" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-blue.png" alt="Buy Me A Coffee" style="height: 51px !important;width: 217px !important;" ></a>
 
