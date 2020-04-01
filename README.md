@@ -80,6 +80,9 @@ global.get('homeassistant').homeAssistant.states["sensor.bedroom_temperature"].s
 return msg
 ```
 
+* The 'Call Service' Node setup I use:
+
+![Image description](https://github.com/3ative/Making-TTS-Better-NodeRed/blob/master/Alexa-Call-Service-Node-Setup.jpg)
 
 <a href="https://www.buymeacoffee.com/3ative" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-blue.png" alt="Buy Me A Coffee" style="height: 51px !important;width: 217px !important;" ></a>
 
