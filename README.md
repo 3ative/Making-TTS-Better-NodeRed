@@ -84,7 +84,7 @@ return msg
 
 ![Image description](https://github.com/3ative/Making-TTS-Better-NodeRed/blob/master/Alexa-Call-Service-Node-Setup.jpg)
 
-
+___
 #### 💖 Found this useful, want to say '*Thanks*' and support my efforts. *CHEERS*🍺
 | Buy me a Coffee | PATREON |
 |-----------------|---------|
